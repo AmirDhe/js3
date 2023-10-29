@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel - AWP Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="excel-form" name="excelform" onsubmit="return myExcelFuns();">
+            <label for="numbers">Enter your numbers separated by spaces:</label>
+            <input type="text" id="numbers" name="numbers" required><br>
+
+            <label class="radio-label">
+                <input type="radio" id="autosum" name="function" value="AutoSum" checked>
+                AutoSum
+            </label>
+
+            <label class="radio-label">
+                <input type="radio" id="average" name="function" value="Average">
+                Average
+            </label>
+
+            <label class="radio-label">
+                <input type="radio" id="max" name="function" value="Max">
+                Max
+            </label>
+
+            <label class="radio-label">
+                <input type="radio" id="min" name="function" value="Min">
+                Min
+            </label><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result">
+           
+        </div>
+    </main>
+
+    <footer>
+        <p>ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Amir DAHMANE and Raphael DAUBIAN</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
